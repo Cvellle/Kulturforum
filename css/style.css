@@ -1,19 +1,105 @@
+.cover {
+  position: absolute;
+  background:url(../images/kf.jpg) 50% 0 no-repeat fixed;
+  background-size: 80% 110%;
+	left: 0%;
+	top: -5%;
+	width: 100%;
+  height: 110%;
+  border-right:10rem solid rgba(0,0,0,0.96);
+  border-left:10.05rem solid rgba(0,0,0,0.96);
+  z-index: -5;
+  } 
+
+.kfl {
+  position: absolute;
+  background:url(../images/kfl.gif) 0% 0 no-repeat fixed;
+  background-size: 20% 123%;
+	left: 0%;
+	top: 0%;
+	width: 100%;
+  height: 100%;
+  font-size: 5rem;
+  color:white;
+  /* opacity:0.5; */
+  opacity:1;
+  /* transform: rotate(-1.5deg); */
+}
+
+.kfr {
+  position: absolute;
+  background:url(../images/kfr.jpg) 80% 0 no-repeat fixed;
+  background-size: 23% 114%;
+	left: 0%;
+	right: 0%;
+	width: 100%;
+  height: 100%;
+  /* font-size: 5rem; */
+  color:white;
+  opacity:1;
+  /* transform: rotate(-1.5deg); */
+}
+
+.black {
+	position:absolute;
+	width:100%;
+	height:15%;
+	top:0%;
+	background:black;
+	opacity:0.8;
+	margin-left:-0.5%;
+  /* border-bottom: 0.1rem solid rgba(0,0,0,0.05); */
+	z-index:1;
+  }
+
+  .border {
+    position:absolute;
+    width:100%;
+    height:15%;
+    top:105.5%;
+    margin-left:-0.5%;
+    background: black;
+  }
+
+.slideshow {
+    position:absolute;
+    width:100%;
+    height:65%;
+    top:123%;
+    z-index: -2;
+}
+
+.sh1 {
+  position:absolute;
+  width:20rem;
+  height:65%;
+  top:10%;
+  left:10%;
+}
+
+.sh2 {
+  position:absolute;
+  width:40%;
+  height:65%;
+  top:10%;
+  right:10%;
+}
 
 #slides{
-	position: absolute;
-	height: 110%;
-        width:100%;
-	padding: 0px;
-	margin: 0px;
-	list-style-type: none;
+  position:absolute;
+	width:20rem;
+	height:20rem;
+    top:133%;
+    left:50%;
+    transform: translatex(-50%);
 }
 
 .slide{
 	position: absolute;
 	left: 0px;
-	top: -10%;
+	top: 0%;
 	width: 100%;
-	height: 110%;
+	height: 100%;
 	opacity: 0;
 	z-index: -3;
 	-webkit-transition: opacity 5s;
@@ -54,7 +140,13 @@
    	background-size:cover;
 }
 
-  
+.kfb {
+	position: absolute;
+	right:10%;
+	top: 15%;
+	height: 20rem;
+}  
+
 .header {
     background-color: black;
     width: 100%;
@@ -82,8 +174,9 @@
     padding: none;
     text-decoration: none;
     transition: 0.6s;
-    border-bottom:2px solid white;
-    font-weight:600;
+    /* border-bottom:2px solid white; */
+    font-weight:500;
+    font-size:80%;
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -286,7 +379,7 @@ li a, .dropbtn {
 
 .videobutton {
 	position:absolute; 
-	opacity:0.70;
+	/* opacity:0.70; */
 	border-radius:7%;
 	border:none;
 	border-radius:30px;
@@ -366,24 +459,30 @@ li a, .dropbtn {
   .black {
 	position:absolute;
 	width:100%;
-	height:15%;
+  height:15%;
+  left:0%;
 	top:0%;
 	background:black;
 	opacity:0.9;
-	margin-left:-0.5%;
+  margin-left:-0.5%;
   }
 	
   .header {
-    position:absolute;
-    height:20%;
+  position:absolute;
+  height:20%;
 	margin-top:-2.5%;
-    margin-left:-2.5%;
-	width:102.5%;
-	background:black;
+  margin-left:-2.5%;
+	width:100%;
+  background:black;
+  z-index: 10;
   }
    
   .title {
-	position:relative;
+  position:absolute;
+  width:80%;
+  height:15%;
+  left:0%;
+  top:0%;
 	margin-left:5%;
 	bottom:8%;
   }
@@ -397,9 +496,10 @@ li a, .dropbtn {
   
   div.nav {
     position:sticky;
-	margin-top:0%;
+	  margin-top:0%;
     top:-15%;
     width:100%;
+    z-index: 5;
   }
  
   .dropdown {
@@ -410,7 +510,7 @@ li a, .dropbtn {
   }
   
   .slider {
-	position:relative;
+    position:relative;
     width:100%;
   }
 
@@ -420,15 +520,15 @@ li a, .dropbtn {
     justify-content: center;
     outline-style: solid;
     outline-color:black;
-	width:100%;
+	  width:100%;
     height:45%;
-	opacity:0.8;
-	border:2px solid white;
+	  opacity:0.8;
+	  border:2px solid white;
   }
   
   .dropbtn:active {
     outline:none;
-	background:black;
+	  background:black;
   }
      
   .dropdowncont {
@@ -442,32 +542,69 @@ li a, .dropbtn {
     position:relative;
     min-height:0%;
     transition:0.5s all;
-	opacity:0;
+	  opacity:0;
   }   
+
   .slider.opened {
     position:relative;
     max-height:100%;
-	opacity:1;
+	  opacity:1;
     transition:0.5s all;
-	/*transition-timing-function: linear;*/
   }
 
-  
   .slider a {
-	height:33%;
-	text-align:center;
-	width:100%;
-	margin-left:-5%;
-	transform: translateX(-50%);
+    height:33%;
+    text-align:center;
+    width:100%;
+    margin-left:-5%;
+    transform: translateX(-50%);
   }
   
-  .jumbotron {
+  #slides{
     position:absolute;
-    z-index:-1;
-    top:20%;
-    height:82.5%;
-	width:105%; 
-	margin-left:-5%;
+    width:100%;
+    height:100%;
+    top:0%;
+    left:50%;
+    transform: translatex(-50%);
+    z-index: 0;
+  }
+ .vidplayer {
+    position:absolute;
+	width:100%;
+	height:20%;
+    top:100%;
+	margin-left:-0.5%;
+  }
+   
+  .videobutton {
+	position:absolute; 
+	top:50%;
+	transform:translateY(-50%);
+	left:14%;
+	width:17%;
+	height:55%;
+	outline:none;
+	opacity:0.70;
+	border-radius:7%;
+ } 
+ .contact {
+  position:absolute;
+  top:20%;
+  height:74.5%;
+  width:100%;
+  top:50px;
+  background-color:white;
+  margin-top:10%;
+  left:-2.5;
+}
+  .kfb {
+    display:none;
+  }  
+  
+
+  .jumbotron {
+    display:none;
   }
   
   .t1{
@@ -514,19 +651,26 @@ li a, .dropbtn {
     
   .vidplayer {
     position:absolute;
-    width:102.5%;
-	height:15%;
-    top:102.5%;
-	margin-left:-2.5%;
+    width:100%;
+	  height:18%;
+    top:100%;
+    left:0%;
+    background: black;
   }
   
+.border {
+  display:none;
+}
+
   .videobutton {
 	position:absolute;
 	top:50%;
-    transform:translateY(-50%) translateX(-50%);
+  transform:translateY(-50%) translateX(-50%);
 	left:50%;
-	height:80%;
-	width:25%;
+  height:3rem;
+  width:5rem;
+  background:black;
+	/* width:25%; */
   }
 
   .videotext {
@@ -544,8 +688,8 @@ li a, .dropbtn {
   }
   .footer{
     position:absolute; 
-	width:100%;	
-	height:100%;
+	  width:100%;	
+	  height:100%;
     top:117.5%;
   }
   
@@ -553,7 +697,7 @@ li a, .dropbtn {
     position:absolute;
     top:0%;
     height:10%;
-    width:102.5%;
+    width:100%;
 	margin-left:-2.5%;
 	background:#333;
   }
@@ -809,8 +953,13 @@ li a, .dropbtn {
 	opacity:0.70;
 	border-radius:7%;
  } 
+<<<<<<< HEAD
+
+  .videobutton:hover {
+=======
  
   /* .videobutton:hover {
+>>>>>>> d341eea1c32c51cdab0ad0e135c80cd85fa72c22
 	cursor:pointer;
 	transition:0.1s linear;
 	opacity:0.9;
@@ -859,12 +1008,13 @@ li a, .dropbtn {
   
   .contact {
     position:absolute;
-	top:20%;
+	  top:20%;
     height:74.5%;
     width:100%;
     top:50px;
     background-color:white;
-	margin-top:10%;
+    margin-top:10%;
+    left:-2.5;
   }
   
   .subm {
@@ -968,6 +1118,53 @@ li a, .dropbtn {
 	display:none; 
   }
   
+
+  #slides{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0%;
+    left:50%;
+    transform: translatex(-50%);
+    z-index: 0;
+  }
+  .vidplayer {
+    position:absolute;
+	width:100%;
+	height:20%;
+    top:100%;
+	margin-left:-0.5%;
+  }
+   
+  .videobutton {
+	position:absolute; 
+	top:50%;
+	transform:translateY(-50%);
+	left:14%;
+	width:17%;
+	height:55%;
+	outline:none;
+	opacity:0.70;
+	border-radius:7%;
+ } 
+ .contact {
+  position:absolute;
+  top:20%;
+  height:74.5%;
+  width:100%;
+  top:50px;
+  background-color:white;
+  margin-top:10%;
+  left:-2.5;
+}
+  .kfb {
+    display:none;
+  }  
+  
+
+  .jumbotron {
+    display:none;
+  }
  
 }
 	
@@ -980,6 +1177,10 @@ li a, .dropbtn {
 	top:0%;
 	background:black;
 	opacity:0.8;
+<<<<<<< HEAD
+	margin-left:-0.5%;
+  /* border-bottom: 0.1rem solid white; */
+=======
 	/* margin-left:-0.5%; */
 	/*box-shadow: 0px 0px 10px 6px #000;
 	-webkit-filter: blur(0.2);
@@ -987,6 +1188,7 @@ li a, .dropbtn {
     -o-filter: blur(0.2);
     -ms-filter: blur(0.2);
 	filter: blur(2px);*/
+>>>>>>> d341eea1c32c51cdab0ad0e135c80cd85fa72c22
 	z-index:1;
   }
 
@@ -1040,7 +1242,7 @@ li a, .dropbtn {
 	min-width: 60px;
     height:100%;
 	border:none;
-	border-bottom:1.5px solid white;
+	border-bottom:1.4px solid brown;
 	padding:2%;
 	opacity:1;
 	z-index:2;
@@ -1079,13 +1281,18 @@ li a, .dropbtn {
     padding:none;
     text-decoration: none;
     outline:none;
-    transform:scale(1.08,1.03);
+    transform:scale(1.05,0.95);
     opacity:1;
-	font-size:108%;	
-	-webkit-transition:0.2s;
+  	/* font-size:100%;	 */
+	  -webkit-transition:0.2s;
      -moz-transition:0.2s;
       -ms-transition:0.2s;
+<<<<<<< HEAD
+    border-bottom:2px solid red;  
+}
+=======
 } */
+>>>>>>> d341eea1c32c51cdab0ad0e135c80cd85fa72c22
  
   .rel {
     position:relative;
@@ -1171,20 +1378,28 @@ li a, .dropbtn {
   
   .vidplayer {
     position:absolute;
+<<<<<<< HEAD
+  width:20rem;
+  height:20rem;
+  top:133%;
+  left:10%;
+=======
 	width:95%;
 	height:20%;
     top:100%;
 	/* margin-left:-0.5%; */
+>>>>>>> d341eea1c32c51cdab0ad0e135c80cd85fa72c22
   }
    
   .videobutton {
 	position:absolute; 
-	top:20%;
-	left:5.2%;
-	width:8%;
-	height:60%;
+	top:50%;
+  left:50%;
+  transform: translatex(-50%)  translatey(-50%);
+	width:12rem;
+	height:10em;
 	outline:none;
-	opacity:0.70;	
+	/* opacity:0.70;	 */
  } 
 
   .videobutton:hover {
@@ -1210,12 +1425,13 @@ li a, .dropbtn {
   .youtube {
     height:60%;
     width:45%;
-    transform: translateY(-20%);   
+    transform: translateY(-20%);  
+    z-index: 2; 
   }
   
   .footer {
     position:absolute;
-    top:120%;
+    top:190%;
     width:100%;
     height:100%;
   }  
@@ -3003,6 +3219,8 @@ li a, .dropbtn {
   .rect:focus {
     outline:none;
   }
+
+  
   
 }
 
@@ -3257,7 +3475,54 @@ body{
     left:68%;
     top:14%;  
   }
-	
+  
+  #slides{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0%;
+    left:50%;
+    transform: translatex(-50%);
+    z-index: 0;
+  }
+  .vidplayer {
+    position:absolute;
+	width:100%;
+	height:20%;
+    top:100%;
+	margin-left:-0.5%;
+  }
+   
+  .videobutton {
+	position:absolute; 
+	top:50%;
+	transform:translateY(-50%);
+	left:14%;
+	width:17%;
+	height:55%;
+	outline:none;
+	opacity:0.70;
+	border-radius:7%;
+ } 
+ .contact {
+  position:absolute;
+  top:20%;
+  height:74.5%;
+  width:100%;
+  top:50px;
+  background-color:white;
+  margin-top:10%;
+  left:-2.5;
+}
+  .kfb {
+    display:none;
+  }  
+  
+
+  .jumbotron {
+    display:none;
+  }
+
 }
 
 
