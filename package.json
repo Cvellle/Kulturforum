@@ -1,0 +1,37 @@
+{
+  "devDependencies": {
+    "webpack-config": "^7.5.0"
+  },
+  "name": "kulturforum",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "constitute": "^1.6.2",
+    "camelcase": "^4.1.0",
+    "clone": "^1.0.4",
+    "babel-runtime": "^6.26.0",
+    "core-js": "^2.5.6",
+    "lodash": "^4.17.10",
+    "regenerator-runtime": "^0.11.1",
+    "recursive-iterator": "^3.3.0",
+    "yargs-parser": "^8.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+	"build": "webpack --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cvellle/Kulturforum.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cvellle/Kulturforum/issues"
+  },
+  "homepage": "https://github.com/Cvellle/Kulturforum#readme"
+}
