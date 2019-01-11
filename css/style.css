@@ -67,6 +67,9 @@
 }
 
 .dropbtn {
+  display:flex;
+  align-items: center;
+  justify-content: center;
     background-color: black; 
     font-size: 100%;
     font-family:Futura, sans-serif;
@@ -85,13 +88,13 @@
 
 .dropbtn:hover, .dropbtn:focus {
     background-color: white;
-    display: inline-block;
     color: black;
-    text-align: center;
+    /* text-align: center;
     padding:none;
     text-decoration: none;
     outline:none;
     opacity:1;
+    transition: 0.3s all; */
 }
 
 .dropbtn:focus {
@@ -263,7 +266,10 @@ li {
 }
 
 li a, .dropbtn {
-    display: inline-block;
+  display:flex;
+    align-items: center;
+    justify-content: center;
+    /* display: inline-block; */
     color: white;
     text-align: center;
     text-decoration: none;
@@ -409,6 +415,9 @@ li a, .dropbtn {
   }
 
   .dropbtn {
+    display:flex;
+    align-items: center;
+    justify-content: center;
     outline-style: solid;
     outline-color:black;
 	width:100%;
@@ -801,12 +810,12 @@ li a, .dropbtn {
 	border-radius:7%;
  } 
  
-  .videobutton:hover {
+  /* .videobutton:hover {
 	cursor:pointer;
 	transition:0.1s linear;
 	opacity:0.9;
  } 
-  
+   */
   .videotext {
 	position:absolute; 
 	bottom:30%;
@@ -1062,7 +1071,7 @@ li a, .dropbtn {
 	background:transparent;
   }
   
-  .dropbtn:hover{
+  /* .dropbtn:hover{
     background-color: white;
     display: inline-block;
     color: black;
@@ -1076,7 +1085,7 @@ li a, .dropbtn {
 	-webkit-transition:0.2s;
      -moz-transition:0.2s;
       -ms-transition:0.2s;
-}
+} */
  
   .rel {
     position:relative;
@@ -1180,9 +1189,9 @@ li a, .dropbtn {
 
   .videobutton:hover {
 	cursor:pointer;
-	transition:0.1s linear;
+ /*	transition:0.1s linear;*/
 	opacity:0.9;
- } 
+ }  
   
   .videotext {
 	position:absolute; 
@@ -1228,11 +1237,12 @@ li a, .dropbtn {
    }
   
   .contact {
-    position:absolute;
-	top:20%;
-    height:74.5%;
-    width:100%;
-    background-color:white;
+  position:absolute;
+    left:-0.65%;
+	  top:15%;
+    height:85%;
+    width:100.65%;
+    background:white;
   }
   
   .map {
@@ -1440,6 +1450,9 @@ body{
   }
   
   .dropbtn {	
+    display:flex;
+    align-items: center;
+    justify-content: center;
     position:relative;
 	opacity:1; 
 	width:98%;
@@ -1456,16 +1469,15 @@ body{
   
   .dropbtn:hover{
     background-color: white;
-    display: inline-block;
     color: black;
-    text-align: center;
+    /* text-align: center;
     padding:none;
     text-decoration: none;
     outline:none;
     transform:scale(1.08,1.03);
     opacity:1;
-	font-size:108%;	
-}
+	font-size:108%;	*/
+} 
  
   .rel {
     position:relative;
