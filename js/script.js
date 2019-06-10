@@ -2,7 +2,7 @@
 var slider = document.getElementsByClassName('slider');
 var dropbtn = document.querySelectorAll(".dropbtn");
 
-dropbtn.forEach(el=>el.addEventListener('mouseenter', toggleSlider));
+dropbtn.forEach(el => el.addEventListener('mouseenter', toggleSlider));
 
 function toggleSlider(){
 	if (!event.target.matches('.slider')) {  
@@ -18,7 +18,7 @@ function toggleSlider(){
       
         $(this).parent().siblings().children().children().removeClass("opened");
         $(this).parent().siblings().children().children().addClass("closed");
-		$(this).parent().siblings().children().children().style.backgroundColor="black";
+	$(this).parent().siblings().children().children().style.backgroundColor = "black";
     }
 
   }
